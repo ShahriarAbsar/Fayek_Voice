@@ -1,0 +1,1317 @@
+*{
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  
+}
+
+
+
+@media (max-width:428px)  {
+
+  *{
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+  }
+  .container {
+    background-image: url("./background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading {
+    text-align: center;
+    align-items: center;
+  }
+
+  .heading img {
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  .form-container {
+    width: 278px;
+    height: 39px;
+    margin: 50px auto;
+    padding: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    position: relative;
+  }
+
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+  }
+
+  .form-container form input {
+    border-bottom: 1px solid white;
+    border-top: transparent;
+    border: hidden;
+    width: 278px;
+    height: 31px;
+    background: transparent;
+    border: transparent;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    outline: none;
+  }
+
+  .form-container form input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-container form .circular-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("../../assets/button1.svg");
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    z-index: 1;
+  }
+
+  .form-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border: transparent;
+    z-index: 0;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    display: inline-block;
+  }
+
+  .one {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("./button1.svg");
+    top: 30%;
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: fixed;
+    left: 77%;
+    z-index: 1;
+  }
+
+
+  .two{
+        background: url("./button2.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+
+  .uno{
+    text-align: center;
+        font-size: 16px;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 28%;
+  
+  }
+
+  .three{
+        background: url("./button3.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+  .dos{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;  
+  }
+
+  .four{
+        background: url("./button4.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 25%;
+        z-index: 1;
+  }
+  .tres{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;   
+  }
+
+  .five{
+        background: url("./button5.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 52%;  
+        z-index: 1;
+  }
+  .quatro{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%; 
+        z-index: 3;  
+  }
+
+  .audio {
+    position: fixed;
+    top: 65%;
+    height: 20rem;
+  
+    width: 100%;
+    background: linear-gradient( #09090938 0%, #909090a6 80%);; /* Change background color */
+    opacity: 90%;
+    backdrop-filter: blur(10px);
+    color: #333; /* Change text color */
+    border-radius: 0px; /* Add border radius */
+    padding: 10px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+/* audio::-webkit-media-controls-background {
+  background-color: #c21313;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+  audio::-webkit-media-controls-panel{
+    width: 96%;
+    color: #ece9e9 !important;
+    position: fixed;
+    top: 5%;
+    left: -.8rem;
+    text-align: center;
+    height: 3rem;
+  }
+  .audio::-webkit-media-controls-play-button,
+  .audio::-webkit-media-controls-pause-button {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+  
+  audio::-webkit-media-controls-mute-button {
+    
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  audio::-webkit-media-controls-timeline{
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  /* Customize the color of the volume slider */
+  .audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(194, 181, 181, 0); /* Example: Change to red */
+  }
+  
+  /* Customize the color of the time display */
+  .audio::-webkit-media-controls-current-time-display,
+  .audio::-webkit-media-controls-time-remaining-display {
+    
+    color: rgb(252, 243, 243); /* Example: Change to red */
+  }
+
+  
+}
+
+
+
+
+
+
+@media (max-width:414px)  {
+
+  *{
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+  }
+  .container {
+    background-image: url("./background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading {
+    text-align: center;
+    align-items: center;
+  }
+
+  .heading img {
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  .form-container {
+    width: 278px;
+    height: 39px;
+    margin: 50px auto;
+    padding: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    position: relative;
+  }
+
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+  }
+
+  .form-container form input {
+    border-bottom: 1px solid white;
+    border-top: transparent;
+    border: hidden;
+    width: 278px;
+    height: 31px;
+    background: transparent;
+    border: transparent;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    outline: none;
+  }
+
+  .form-container form input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-container form .circular-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("../../assets/button1.svg");
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    z-index: 1;
+  }
+
+  .form-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border: transparent;
+    z-index: 0;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    display: inline-block;
+  }
+
+  .one {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("./button1.svg");
+    top: 31%;
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: fixed;
+    left: 78%;
+    z-index: 1;
+  }
+
+
+  .two{
+        background: url("./button2.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+
+  .uno{
+    text-align: center;
+        font-size: 16px;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 28%;
+  
+  }
+
+  .three{
+        background: url("./button3.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+  .dos{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;  
+  }
+
+  .four{
+        background: url("./button4.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 25%;
+        z-index: 1;
+  }
+  .tres{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;   
+  }
+
+  .five{
+        background: url("./button5.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 52%;  
+        z-index: 1;
+  }
+  .quatro{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%; 
+        z-index: 3;  
+  }
+
+  .audio {
+    position: fixed;
+    top: 65%;
+    height: 20rem;
+  
+    width: 100%;
+    background: linear-gradient( #09090938 0%, #909090a6 80%);; /* Change background color */
+    opacity: 90%;
+    backdrop-filter: blur(10px);
+    color: #333; /* Change text color */
+    border-radius: 0px; /* Add border radius */
+    padding: 10px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+/* audio::-webkit-media-controls-background {
+  background-color: #c21313;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+  audio::-webkit-media-controls-panel{
+    width: 96%;
+    color: #ece9e9 !important;
+    position: fixed;
+    top: 5%;
+    left: -.8rem;
+    text-align: center;
+    height: 3rem;
+  }
+  .audio::-webkit-media-controls-play-button,
+  .audio::-webkit-media-controls-pause-button {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+  
+  audio::-webkit-media-controls-mute-button {
+    
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  audio::-webkit-media-controls-timeline{
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  /* Customize the color of the volume slider */
+  .audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(194, 181, 181, 0); /* Example: Change to red */
+  }
+  
+  /* Customize the color of the time display */
+  .audio::-webkit-media-controls-current-time-display,
+  .audio::-webkit-media-controls-time-remaining-display {
+    
+    color: rgb(252, 243, 243); /* Example: Change to red */
+  }
+
+  
+}
+
+
+@media (max-width:390px)  {
+
+  *{
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+  }
+  .container {
+    background-image: url("./background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading {
+    text-align: center;
+    align-items: center;
+  }
+
+  .heading img {
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  .form-container {
+    width: 278px;
+    height: 39px;
+    margin: 50px auto;
+    padding: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    position: relative;
+  }
+
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+  }
+
+  .form-container form input {
+    border-bottom: 1px solid white;
+    border-top: transparent;
+    border: hidden;
+    width: 278px;
+    height: 31px;
+    background: transparent;
+    border: transparent;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    outline: none;
+  }
+
+  .form-container form input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-container form .circular-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("../../assets/button1.svg");
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    z-index: 1;
+  }
+
+  .form-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border: transparent;
+    z-index: 0;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    display: inline-block;
+  }
+
+  .one {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("./button1.svg");
+    top: 34%;
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: fixed;
+    left: 80%;
+    z-index: 1;
+  }
+
+
+  .two{
+        background: url("./button2.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+
+  .uno{
+    text-align: center;
+        font-size: 16px;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 27%;
+  
+  }
+
+  .three{
+        background: url("./button3.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+  .dos{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;  
+  }
+
+  .four{
+        background: url("./button4.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 25%;
+        z-index: 1;
+  }
+  .tres{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;   
+  }
+
+  .five{
+        background: url("./button5.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 52%;  
+        z-index: 1;
+  }
+  .quatro{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%; 
+        z-index: 3;  
+  }
+
+  .audio {
+    position: fixed;
+    top: 65%;
+    height: 20rem;
+  
+    width: 100%;
+    background: linear-gradient( #09090938 0%, #909090a6 80%);; /* Change background color */
+    opacity: 90%;
+    backdrop-filter: blur(10px);
+    color: #333; /* Change text color */
+    border-radius: 0px; /* Add border radius */
+    padding: 10px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+/* audio::-webkit-media-controls-background {
+  background-color: #c21313;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+  audio::-webkit-media-controls-panel{
+    width: 96%;
+    color: #ece9e9 !important;
+    position: fixed;
+    top: 5%;
+    left: -.8rem;
+    text-align: center;
+    height: 3rem;
+  }
+  .audio::-webkit-media-controls-play-button,
+  .audio::-webkit-media-controls-pause-button {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+  
+  audio::-webkit-media-controls-mute-button {
+    
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  audio::-webkit-media-controls-timeline{
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  /* Customize the color of the volume slider */
+  .audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(194, 181, 181, 0); /* Example: Change to red */
+  }
+  
+  /* Customize the color of the time display */
+  .audio::-webkit-media-controls-current-time-display,
+  .audio::-webkit-media-controls-time-remaining-display {
+    
+    color: rgb(252, 243, 243); /* Example: Change to red */
+  }
+
+  
+}
+
+
+@media (max-width:375px)  {
+  .container {
+    background-image: url("./background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading {
+    text-align: center;
+    align-items: center;
+  }
+
+  .heading img {
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  .form-container {
+    width: 278px;
+    height: 39px;
+    margin: 50px auto;
+    padding: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    position: relative;
+  }
+
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+  }
+
+  .form-container form input {
+    border-bottom: 1px solid white;
+    border-top: transparent;
+    border: hidden;
+    width: 278px;
+    height: 31px;
+    background: transparent;
+    border: transparent;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    outline: none;
+  }
+
+  .form-container form input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-container form .circular-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("../../assets/button1.svg");
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    z-index: 1;
+  }
+
+  .form-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border: transparent;
+    z-index: 0;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    display: inline-block;
+  }
+
+  .one {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("./button1.svg");
+    top: 36%;
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: fixed;
+    left: 80%;
+    z-index: 1;
+  }
+
+
+  .two{
+        background: url("./button2.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+
+  .uno{
+    text-align: center;
+        font-size: 16px;
+        text-align: center;
+        position: fixed;
+        color: #ffffff;
+        top: 90%;
+        left: 27%;
+  
+  }
+
+  .three{
+        background: url("./button3.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+  .dos{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #ffffff;
+        top: 90%;
+        left: 37%;  
+  }
+
+  .four{
+        background: url("./button4.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        /* filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0)); */
+        position: fixed;
+        top: 80%;
+        left: 25%;
+        z-index: 1;
+  }
+  .tres{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #ffffff;
+        top: 90%;
+        left: 37%;   
+  }
+
+  .five{
+        background: url("./button5.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        /* filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0)); */
+        position: fixed;
+        top: 80%;
+        left: 52%;  
+        z-index: 1;
+  }
+  .quatro{
+      padding-left: 17%;
+      padding-right: 18%;
+        font-size: 16px ;
+        text-align: center;
+        position: fixed;
+        color: #ffffffd2;
+        top: 30%;
+        left: 0%; 
+        z-index: 3;  
+  }
+
+  /*  */
+
+  .audio {
+    position: fixed;
+    top: 65%;
+    height: 20rem;
+  
+    width: 100%;
+    background: linear-gradient( #09090938 0%, #909090a6 80%);; /* Change background color */
+    opacity: 90%;
+    backdrop-filter: blur(10px);
+    color: #333; /* Change text color */
+    border-radius: 0px; /* Add border radius */
+    padding: 10px; /* Add padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+/* audio::-webkit-media-controls-background {
+  background-color: #c21313;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+  audio::-webkit-media-controls-panel{
+    width: 96%;
+    color: #ece9e9 !important;
+    position: fixed;
+    top: 5%;
+    left: -.8rem;
+    text-align: center;
+    height: 3rem;
+  }
+  .audio::-webkit-media-controls-play-button,
+  .audio::-webkit-media-controls-pause-button {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+  
+  audio::-webkit-media-controls-mute-button {
+    
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  audio::-webkit-media-controls-timeline{
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  /* Customize the color of the volume slider */
+  .audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(194, 181, 181, 0); /* Example: Change to red */
+  }
+  
+  /* Customize the color of the time display */
+  .audio::-webkit-media-controls-current-time-display,
+  .audio::-webkit-media-controls-time-remaining-display {
+    
+    color: rgb(252, 243, 243); /* Example: Change to red */
+  }
+
+  
+
+}
+
+
+
+
+@media (max-width:360px)  {
+
+  *{
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    
+  }
+  .container {
+    background-image: url("./background.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .heading {
+    text-align: center;
+    align-items: center;
+  }
+
+  .heading img {
+    text-align: center;
+    margin-top: 22px;
+  }
+
+  .form-container {
+    width: 278px;
+    height: 39px;
+    margin: 50px auto;
+    padding: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+    position: relative;
+  }
+
+  .form-container form {
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+  }
+
+  .form-container form input {
+    border-bottom: 1px solid white;
+    border-top: transparent;
+    border: hidden;
+    width: 278px;
+    height: 31px;
+    background: transparent;
+    border: transparent;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    outline: none;
+  }
+
+  .form-container form input::placeholder {
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-container form .circular-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("../../assets/button1.svg");
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: absolute;
+    left: 90%;
+    z-index: 1;
+  }
+
+  .form-container::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border: transparent;
+    z-index: 0;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    display: inline-block;
+  }
+
+  .one {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: url("./button1.svg");
+    top: 32%;
+    border: none;
+    margin-top: 0px;
+    align-self: center;
+    cursor: pointer;
+    position: fixed;
+    left: 80%;
+    z-index: 1;
+  }
+
+
+  .two{
+        background: url("./button2.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+
+  .uno{
+    text-align: center;
+        font-size: 16px;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 27%;
+  
+  }
+
+  .three{
+        background: url("./button3.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 78%;
+        left: 38%;
+  }
+  .dos{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;  
+  }
+
+  .four{
+        background: url("./button4.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 25%;
+        z-index: 1;
+  }
+  .tres{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%;   
+  }
+
+  .five{
+        background: url("./button5.svg");
+        height: 82px;
+        width: 82px;
+        border-radius: 50%;
+        border: none;
+        filter: drop-shadow(0 0 2.95rem rgb(0, 0, 0));
+        position: fixed;
+        top: 80%;
+        left: 52%;  
+        z-index: 1;
+  }
+  .quatro{
+        font-size: 16px bold;
+        text-align: center;
+        position: fixed;
+        color: #0f0e0e;
+        top: 90%;
+        left: 37%; 
+        z-index: 3;  
+  }
+
+  .audio{
+    background: rgba(214, 211, 18, 0);
+    position: fixed;
+    top: 68%;
+    left: 0%;
+    
+  }
+}
+

@@ -1,0 +1,49 @@
+<!-- working -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Button Interaction</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="heading">
+      <img src="./head.svg" alt="">
+    </div>
+
+    <div class="form-container">
+      <form>
+        <!-- Use *ngIf to conditionally show/hide the input -->
+        <input type="text" placeholder="Please write your name first">
+        <!-- Button to toggle input visibility -->
+      </form>
+    </div>
+
+    <div class="button-container">
+      <button class="one" id="button1" class="button" onclick="showButton(2)"></button>
+      <button class="two" id="button2" class="button" onclick="startRecording()" style="display: none;"></button>
+      <button class="three" id="button3" class="button" onclick="stopRecording()" style="display: none;"></button>
+      <button class="four" id="button4" class="button" onclick="showButton(1)" style="display: none;"></button>
+      <button class="five" id="button5" class="button" onclick="showPlayback()" style="display: none;"></button>
+      <button class="six" id="downloadButton" class="button" onclick="downloadRecording()" style="display: none;">Download Recording</button>
+    </div>
+
+    <h3 class="uno" id="text2" style="display: none;"><strong>Tap to Start</strong><br>recording your message</h3>
+    <h3 class="dos" id="text3" style="display: none;"><strong>Tap to stop</strong></h3>
+    <h3 class="tres" id="text4" style="display: none;">This is the text for Button 4.</h3>
+    <h3 class="quatro" id="text5" style="display: none;">Thank you so much for wishing us 
+      and blessing us with your presence!</h3>
+
+    <h1 id="hiddenText" style="display: none;">This is an H1 text.</h1>
+
+    <audio class="audio"  id="audioPlayer" controls controlsList="nodownload noplaybackrate" style="display: none;"></audio>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+</html>
