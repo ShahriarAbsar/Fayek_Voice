@@ -1,0 +1,239 @@
+[debug] [2023-12-17T04:32:44.453Z] ----------------------------------------------------------------------
+[debug] [2023-12-17T04:32:44.458Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\User\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-12-17T04:32:44.459Z] CLI Version:   13.0.2
+[debug] [2023-12-17T04:32:44.459Z] Platform:      win32
+[debug] [2023-12-17T04:32:44.460Z] Node Version:  v20.4.0
+[debug] [2023-12-17T04:32:44.460Z] Time:          Sun Dec 17 2023 10:32:44 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-12-17T04:32:44.460Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-17T04:32:44.475Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-17T04:32:44.476Z] > authorizing via signed-in user (warc.digital@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\User\Documents\test fayek
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-12-17T04:32:52.769Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-12-17T04:32:54.033Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2023-12-17T04:32:54.034Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project faeenwedding (faeenwedding) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2023-12-17T04:32:55.530Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firebasedatabase.googleapis.com [none]
+[debug] [2023-12-17T04:32:55.530Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:32:57.647Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firebasedatabase.googleapis.com 200
+[debug] [2023-12-17T04:32:57.648Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2023-12-17T04:32:57.652Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/faeenwedding/locations/-/instances/faeenwedding-default-rtdb [none]
+[debug] [2023-12-17T04:32:59.611Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/faeenwedding/locations/-/instances/faeenwedding-default-rtdb 200
+[debug] [2023-12-17T04:32:59.612Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/faeenwedding/locations/-/instances/faeenwedding-default-rtdb {"name":"projects/1066829809139/locations/asia-southeast1/instances/faeenwedding-default-rtdb","project":"projects/1066829809139","databaseUrl":"https://faeenwedding-default-rtdb.asia-southeast1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2023-12-17T04:33:07.663Z] >>> [apiv2][query] GET https://faeenwedding-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2023-12-17T04:33:07.872Z] <<< [apiv2][status] GET https://faeenwedding-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2023-12-17T04:33:07.872Z] <<< [apiv2][body] GET https://faeenwedding-default-rtdb.asia-southeast1.firebasedatabase.app/.settings/rules.json [stream]
+[info] +  Database Rules for faeenwedding-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2023-12-17T04:33:07.881Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firestore.googleapis.com [none]
+[debug] [2023-12-17T04:33:07.881Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firestore.googleapis.com x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:33:09.943Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firestore.googleapis.com 200
+[debug] [2023-12-17T04:33:09.943Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/firestore.googleapis.com [omitted]
+[debug] [2023-12-17T04:33:09.945Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default) [none]
+[debug] [2023-12-17T04:33:10.344Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default) 200
+[debug] [2023-12-17T04:33:10.345Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default) {"name":"projects/faeenwedding/databases/(default)","uid":"0788e69c-d3cf-4f3a-9f8b-3ef5836de917","createTime":"2023-12-17T04:32:21.074326Z","updateTime":"2023-12-17T04:32:21.074326Z","locationId":"asia-south1","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2023-12-17T04:32:21.074326Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"j","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IJG1zovSlYMDMJaDjvTRlYMD"}
+[debug] [2023-12-17T04:33:10.345Z] database_type: FIRESTORE_NATIVE
+[debug] [2023-12-17T04:33:10.346Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-17T04:33:10.347Z] > authorizing via signed-in user (warc.digital@gmail.com)
+[debug] [2023-12-17T04:33:10.347Z] [iam] checking project faeenwedding for permissions ["firebase.projects.get"]
+[debug] [2023-12-17T04:33:10.349Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions [none]
+[debug] [2023-12-17T04:33:10.349Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:33:10.349Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-17T04:33:12.049Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions 200
+[debug] [2023-12-17T04:33:12.049Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-17T04:33:15.674Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/faeenwedding/releases pageSize=10&pageToken=
+[debug] [2023-12-17T04:33:17.415Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/faeenwedding/releases 200
+[debug] [2023-12-17T04:33:17.415Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/faeenwedding/releases {"releases":[{"name":"projects/faeenwedding/releases/cloud.firestore","rulesetName":"projects/faeenwedding/rulesets/c927f906-3795-43eb-860b-3752bb3d5db5","createTime":"2023-12-17T04:32:27.932243Z","updateTime":"2023-12-17T04:32:27.932243Z"}]}
+[debug] [2023-12-17T04:33:17.416Z] Found ruleset: projects/faeenwedding/rulesets/c927f906-3795-43eb-860b-3752bb3d5db5
+[debug] [2023-12-17T04:33:17.417Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/faeenwedding/rulesets/c927f906-3795-43eb-860b-3752bb3d5db5 [none]
+[debug] [2023-12-17T04:33:17.925Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/faeenwedding/rulesets/c927f906-3795-43eb-860b-3752bb3d5db5 200
+[debug] [2023-12-17T04:33:17.925Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/faeenwedding/rulesets/c927f906-3795-43eb-860b-3752bb3d5db5 [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2023-12-17T04:33:20.456Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-12-17T04:33:20.459Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-12-17T04:33:20.741Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-12-17T04:33:20.741Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-12-17T04:33:20.832Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-12-17T04:33:20.832Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/faeenwedding/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/faeenwedding/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2023-12-17T04:33:20.840Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-17T04:33:20.841Z] > authorizing via signed-in user (warc.digital@gmail.com)
+[debug] [2023-12-17T04:33:20.841Z] [iam] checking project faeenwedding for permissions ["firebase.projects.get"]
+[debug] [2023-12-17T04:33:20.842Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions [none]
+[debug] [2023-12-17T04:33:20.842Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:33:20.842Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-17T04:33:22.528Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions 200
+[debug] [2023-12-17T04:33:22.528Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/faeenwedding:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2023-12-17T04:33:22.529Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-12-17T04:33:22.529Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:33:22.536Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/runtimeconfig.googleapis.com [none]
+[debug] [2023-12-17T04:33:22.536Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:33:24.579Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/runtimeconfig.googleapis.com 200
+[debug] [2023-12-17T04:33:24.579Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2023-12-17T04:33:24.582Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com 200
+[debug] [2023-12-17T04:33:24.582Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2023-12-17T04:33:24.583Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2023-12-17T04:33:24.583Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:33:25.196Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2023-12-17T04:33:25.196Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2023-12-17T04:33:35.202Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com [none]
+[debug] [2023-12-17T04:33:35.202Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/faeenwedding
+[debug] [2023-12-17T04:33:37.292Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com 200
+[debug] [2023-12-17T04:33:37.292Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/faeenwedding/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/index.js 
+[info] +  Wrote functions/.gitignore 
+[info] 
+=== Hosting Setup
+[debug] [2023-12-17T04:35:08.659Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/faeenwedding [none]
+[debug] [2023-12-17T04:35:09.579Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/faeenwedding 200
+[debug] [2023-12-17T04:35:09.579Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/faeenwedding {"projectId":"faeenwedding","projectNumber":"1066829809139","displayName":"faeenwedding","name":"projects/faeenwedding","resources":{"hostingSite":"faeenwedding","realtimeDatabaseInstance":"faeenwedding-default-rtdb"},"state":"ACTIVE","etag":"1_1df59bf7-a0c2-46e4-91a2-a380751a1b60"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-12-17T04:36:08.476Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2023-12-17T04:36:08.853Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2023-12-17T04:36:08.854Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.7.1","browserURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.7.1/firebase.tgz"},"live":{"version":"10.7","browserURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.7.1/firebase-auth/cordova.js","functions":"https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.7.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.7.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at C:\Users\User\Documents\test fayek 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=51201742&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-12-17T04:36:27.213Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2023-12-17T04:36:27.214Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2023-12-17T04:36:27.869Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2023-12-17T04:36:27.870Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2023-12-17T04:36:27.899Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2023-12-17T04:36:28.495Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2023-12-17T04:36:28.496Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"ShahriarAbsar","id":86921798,"node_id":"MDQ6VXNlcjg2OTIxNzk4","avatar_url":"https://avatars.githubusercontent.com/u/86921798?v=4","gravatar_id":"","url":"https://api.github.com/users/ShahriarAbsar","html_url":"https://github.com/ShahriarAbsar","followers_url":"https://api.github.com/users/ShahriarAbsar/followers","following_url":"https://api.github.com/users/ShahriarAbsar/following{/other_user}","gists_url":"https://api.github.com/users/ShahriarAbsar/gists{/gist_id}","starred_url":"https://api.github.com/users/ShahriarAbsar/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/ShahriarAbsar/subscriptions","organizations_url":"https://api.github.com/users/ShahriarAbsar/orgs","repos_url":"https://api.github.com/users/ShahriarAbsar/repos","events_url":"https://api.github.com/users/ShahriarAbsar/events{/privacy}","received_events_url":"https://api.github.com/users/ShahriarAbsar/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":22,"public_gists":0,"followers":0,"following":0,"created_at":"2021-07-04T15:07:39Z","updated_at":"2023-12-03T04:38:37Z","private_gists":0,"total_private_repos":7,"owned_private_repos":6,"disk_usage":725122,"collaborators":1,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as ShahriarAbsar 
+[info] 
+[debug] [2023-12-17T04:36:57.213Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:36:57.772Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-17T04:36:57.772Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-17T04:39:55.113Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:39:55.630Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-17T04:39:55.630Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-17T04:41:51.408Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:41:52.635Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-17T04:41:52.635Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-17T04:43:02.718Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:43:13.833Z] *** [apiv2] error from fetch(https://api.github.com/repos//actions/secrets/public-key?type=owner, {"headers":{},"method":"GET"}): FetchError: request to https://api.github.com/repos//actions/secrets/public-key?type=owner failed, reason: getaddrinfo ENOTFOUND api.github.com
+[debug] [2023-12-17T04:44:51.881Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:44:52.498Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-17T04:44:52.499Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-17T04:49:53.665Z] >>> [apiv2][query] GET https://api.github.com/repos//Fayek_Voice/actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:49:54.270Z] <<< [apiv2][status] GET https://api.github.com/repos//Fayek_Voice/actions/secrets/public-key 404
+[debug] [2023-12-17T04:49:54.270Z] <<< [apiv2][body] GET https://api.github.com/repos//Fayek_Voice/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-17T04:50:04.931Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:50:05.428Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-17T04:50:05.428Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2023-12-17T04:53:14.672Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2023-12-17T04:53:15.184Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2023-12-17T04:53:15.184Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 

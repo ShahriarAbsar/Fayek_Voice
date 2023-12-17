@@ -1,47 +1,105 @@
 // index.js
 
+// let currentButton = 1;
+// let mediaRecorder;
+// let audioChunks = [];
+
+// function showButton(nextButton) {
+//   document.getElementById(`button${currentButton}`).style.display = 'none';
+
+//   // Hide the form if it exists
+//   const form = document.querySelector('.form-container');
+//   if (form) {
+//     form.style.display = 'none';
+//   }
+
+//   // Hide the previous text if it exists
+//   const previousText = document.getElementById(`text${currentButton}`);
+//   if (previousText) {
+//     previousText.style.display = 'none';
+//   }
+
+//   if (nextButton === 4) {
+//     // If Button 3 is clicked, show Button 4 and Button 5 together
+//     document.getElementById('button4').style.display = 'inline-block';
+//     document.getElementById('button5').style.display = 'inline-block';
+//   } else {
+//     document.getElementById(`button${nextButton}`).style.display = 'inline-block';
+//     document.getElementById('button4').style.display = 'none';
+//     document.getElementById('button5').style.display = 'none';
+//     document.getElementById('downloadButton').style.display = 'none';
+//     document.getElementById('audioPlayer').style.display = 'none'; // Hide the audio player
+
+//     // Show the form if going back to Button 1
+//     if (nextButton === 1) {
+//       const form = document.querySelector('.form-container');
+//       if (form) {
+//         form.style.display = 'block';
+//       }
+//     }
+
+//     // Show the corresponding text for the current button
+//     const currentText = document.getElementById(`text${nextButton}`);
+//     if (currentText) {
+//       currentText.style.display = 'block';
+//     }
+//   }
+
+//   currentButton = nextButton;
+// }
+
+
 let currentButton = 1;
 let mediaRecorder;
 let audioChunks = [];
 
 function showButton(nextButton) {
-  document.getElementById(`button${currentButton}`).style.display = 'none';
+  const buttonElement = document.querySelector(`#button${currentButton}`);
+  if (buttonElement) {
+    buttonElement.style.display = 'none';
+  }
 
-  // Hide the form if it exists
   const form = document.querySelector('.form-container');
   if (form) {
     form.style.display = 'none';
   }
 
-  // Hide the previous text if it exists
   const previousText = document.getElementById(`text${currentButton}`);
   if (previousText) {
     previousText.style.display = 'none';
   }
 
   if (nextButton === 4) {
-    // If Button 3 is clicked, show Button 4 and Button 5 together
     document.getElementById('button4').style.display = 'inline-block';
     document.getElementById('button5').style.display = 'inline-block';
   } else {
-    document.getElementById(`button${nextButton}`).style.display = 'inline-block';
-    document.getElementById('button4').style.display = 'none';
-    document.getElementById('button5').style.display = 'none';
-    document.getElementById('downloadButton').style.display = 'none';
-    document.getElementById('audioPlayer').style.display = 'none'; // Hide the audio player
-
-    // Show the form if going back to Button 1
-    if (nextButton === 1) {
-      const form = document.querySelector('.form-container');
-      if (form) {
-        form.style.display = 'block';
-      }
+    const nextButtonElement = document.getElementById(`button${nextButton}`);
+    if (nextButtonElement) {
+      nextButtonElement.style.display = 'inline-block';
     }
 
-    // Show the corresponding text for the current button
-    const currentText = document.getElementById(`text${nextButton}`);
-    if (currentText) {
-      currentText.style.display = 'block';
+    const button4 = document.getElementById('button4');
+    const button5 = document.getElementById('button5');
+    const downloadButton = document.getElementById('downloadButton');
+    const audioPlayer = document.getElementById('audioPlayer');
+
+    if (button4 && button5 && downloadButton && audioPlayer) {
+      button4.style.display = 'none';
+      button5.style.display = 'none';
+      downloadButton.style.display = 'none';
+      audioPlayer.style.display = 'none';
+
+      if (nextButton === 1) {
+        const form = document.querySelector('.form-container');
+        if (form) {
+          form.style.display = 'block';
+        }
+      }
+
+      const currentText = document.getElementById(`text${nextButton}`);
+      if (currentText) {
+        currentText.style.display = 'block';
+      }
     }
   }
 
@@ -92,9 +150,35 @@ function stopRecording() {
   }
 }
 
-function showPlayback() {
-  showButton(5); // Show "Playback Recording" button
+function downloadRecording() {
+  if (audioChunks.length > 0) {
+    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+
+    // Get a reference to the Firebase Storage bucket
+    const storageRef = firebase.storage().ref();
+
+    // Create a unique filename for each recording (e.g., timestamp)
+    const fileName = `recording_${Date.now()}.wav`;
+
+    // Upload the audio blob to Firebase Storage
+    const audioRef = storageRef.child(fileName);
+    audioRef.put(audioBlob)
+      .then(snapshot => {
+        console.log('Audio uploaded successfully:', snapshot);
+      })
+      .catch(error => {
+        console.error('Error uploading audio:', error);
+      });
+
+    // Clear the chunks for the next recording
+    audioChunks = [];
+  }
 }
+
+
+// function showPlayback() {
+//   showButton(5); // Show "Playback Recording" button
+// }
 
 // function downloadRecording() {
 //   if (audioChunks.length > 0) {
@@ -109,37 +193,37 @@ function showPlayback() {
 //     downloadLink.click();
 
 //     // Remove the download link from the body
-//     // document.body.removeChild(downloadLink);
+//     document.body.removeChild(downloadLink);
 //   }
 // }
 
-function downloadRecording() {
-  if (audioChunks.length > 0) {
-    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+// function downloadRecording() {
+//   if (audioChunks.length > 0) {
+//     const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
 
-    // Assuming you have the user authenticated and have the Google Drive API client loaded
-    // You need to replace 'YOUR_CLIENT_ID' with your actual client ID
-    const CLIENT_ID = '742644266439-m5kdsdouu39jh4a99tsl8cc27lkoe8go.apps.googleusercontent.com';
+//     // Assuming you have the user authenticated and have the Google Drive API client loaded
+//     // You need to replace 'YOUR_CLIENT_ID' with your actual client ID
+//     const CLIENT_ID = '742644266439-m5kdsdouu39jh4a99tsl8cc27lkoe8go.apps.googleusercontent.com';
 
-    // Use the Google Drive API to upload the file
-    gapi.client.drive.files.create({
-      resource: {
-        name: 'recorded_audio.wav', // Change the file name as needed
-        mimeType: 'audio/wav',
-      },
-      media: {
-        mimeType: 'audio/wav',
-        body: audioBlob,
-      },
-    })
-    .then(response => {
-      console.log('File uploaded to Google Drive:', response);
-    })
-    .catch(error => {
-      console.error('Error uploading file to Google Drive:', error);
-    });
-  }
-}
+//     // Use the Google Drive API to upload the file
+//     gapi.client.drive.files.create({
+//       resource: {
+//         name: 'recorded_audio.wav', // Change the file name as needed
+//         mimeType: 'audio/wav',
+//       },
+//       media: {
+//         mimeType: 'audio/wav',
+//         body: audioBlob,
+//       },
+//     })
+//     .then(response => {
+//       console.log('File uploaded to Google Drive:', response);
+//     })
+//     .catch(error => {
+//       console.error('Error uploading file to Google Drive:', error);
+//     });
+//   }
+// }
 
 // index.js
 

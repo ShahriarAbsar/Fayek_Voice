@@ -1314,5 +1314,44 @@
     left: 0%;
     
   }
+
+  audio::-webkit-media-controls-panel{
+    width: 96%;
+    color: #ece9e9 !important;
+    position: fixed;
+    top: 5%;
+    left: -.8rem;
+    text-align: center;
+    height: 3rem;
+  }
+  .audio::-webkit-media-controls-play-button,
+  .audio::-webkit-media-controls-pause-button {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+  
+  audio::-webkit-media-controls-mute-button {
+    
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  audio::-webkit-media-controls-timeline{
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(170deg); 
+  }
+
+  /* Customize the color of the volume slider */
+  .audio::-webkit-media-controls-volume-slider {
+    background-color: rgba(194, 181, 181, 0); /* Example: Change to red */
+  }
+  
+  /* Customize the color of the time display */
+  .audio::-webkit-media-controls-current-time-display,
+  .audio::-webkit-media-controls-time-remaining-display {
+    
+    color: rgb(252, 243, 243); /* Example: Change to red */
+  }
+
+  
+
 }
+
 
